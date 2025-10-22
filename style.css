@@ -1,0 +1,92 @@
+/* Alap reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+/* Hero szekció */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('background.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Tartalom */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Középen nagy logó */
+.hero-logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 20px #ff1e1e);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Cím és szöveg */
+.hero-content h1 {
+  font-size: 3rem;
+  color: #ff1e1e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #ff1e1e, 0 0 20px #ff1e1e, 0 0 40px #b30000;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0 30px;
+  color: #ccc;
+}
+
+/* Gomb */
+.cta-btn {
+  background-color: transparent;
+  border: 2px solid #ff1e1e;
+  color: #ff1e1e;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff1e1e;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.cta-btn:hover {
+  background-color: #ff1e1e;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff1e1e, 0 0 40px #b30000;
+}
+
+/* Neon fény animáció */
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px #ff1e1e);
+  }
+  to {
+    filter: drop-shadow(0 0 25px #ff4d4d);
+  }
+}
