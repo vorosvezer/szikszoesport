@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-/* Hero szekció */
+/* Hero section */
 .hero {
   height: 100vh;
   background: linear-gradient(
@@ -25,7 +25,7 @@ body {
   text-align: center;
 }
 
-/* Tartalom */
+/* Content */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
   justify-content: center;
 }
 
-/* Középen nagy logó */
+/* Logo */
 .hero-logo {
   width: 350px;
   height: auto;
@@ -42,7 +42,7 @@ body {
   animation: glow 2s ease-in-out infinite alternate;
 }
 
-/* Cím és szöveg */
+/* Text */
 .hero-content h1 {
   font-size: 3rem;
   color: #ff1e1e;
@@ -58,7 +58,7 @@ body {
   color: #ccc;
 }
 
-/* Gomb */
+/* Button */
 .cta-btn {
   background-color: transparent;
   border: 2px solid #ff1e1e;
@@ -81,7 +81,7 @@ body {
   box-shadow: 0 0 20px #ff1e1e, 0 0 40px #b30000;
 }
 
-/* Neon fény animáció */
+/* Neon glow animation */
 @keyframes glow {
   from {
     filter: drop-shadow(0 0 10px #ff1e1e);
